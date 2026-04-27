@@ -1,0 +1,112 @@
+# ══════════════════════════════════════════
+#   IPTS — Intelligent Public Transport System
+#   .gitignore for Spring Boot + React
+# ══════════════════════════════════════════
+
+# ─── BACKEND (Spring Boot / Maven) ────────
+
+# Maven build output
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.class
+
+# Maven wrapper (optional — remove if you want to keep mvnw)
+# backend/.mvn/
+# backend/mvnw
+# backend/mvnw.cmd
+
+# Spring Boot specific
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-secret.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code Java
+.factorypath
+.apt_generated/
+
+# ─── FRONTEND (React / Node) ──────────────
+
+# Node modules — never push this (huge)
+frontend/node_modules/
+
+# React build output
+frontend/build/
+frontend/dist/
+
+# Environment variables — keep secrets out
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Cache
+frontend/.cache/
+frontend/.parcel-cache/
+
+# npm / yarn logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# ─── OS FILES ─────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ─── EDITOR & TOOLS ───────────────────────
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Vim
+*.swp
+*.swo
+
+# JetBrains (IntelliJ, WebStorm)
+*.iml
+
+# ─── LOGS ─────────────────────────────────
+*.log
+logs/
+spring.log
+
+# ─── MISC ─────────────────────────────────
+
+# Zip files you might have created
+*.zip
+*.tar.gz
+
+# Test coverage reports
+coverage/
