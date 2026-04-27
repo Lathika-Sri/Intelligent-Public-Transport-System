@@ -3,7 +3,7 @@ import LocationSearch from './components/LocationSearch';
 import Dashboard from './components/Dashboard';
 import './App.css';
 
-const API = 'http://localhost:8080/api';
+const API = 'https://intelligent-public-transport-system-3.onrender.com';
 
 export default function App() {
   const [journey,     setJourney]     = useState(null);
